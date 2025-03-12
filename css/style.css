@@ -102,7 +102,9 @@ transform: rotate(180deg);
     font-size: 2.5rem;
     font-weight: 700;
   }
-  .headline, .subtext, .inspire-text, .cta-buttons, .banner-image-container, .about-section, .services-section, .testimonials-section, .process-section, .contact-section,.my-work {
+  .headline, .subtext, .inspire-text, .cta-buttons, .banner-image-container, 
+  .about-section, .services-section, .testimonials-section, .process-section, 
+  .contact-section,.my-work,.floating-btn {
     animation: fadeInSlideUp 1s ease-in-out;
 }
 /* Fade-in and slide-up animation for left-side content */
