@@ -102,7 +102,7 @@ transform: rotate(180deg);
     font-size: 2.5rem;
     font-weight: 700;
   }
-  .headline, .subtext, .inspire-text, .cta-buttons, .banner-image-container, .about-section {
+  .headline, .subtext, .inspire-text, .cta-buttons, .banner-image-container, .about-section, .services-section, .testimonials-section, .process-section, .contact-section,.my-work {
     animation: fadeInSlideUp 1s ease-in-out;
 }
 /* Fade-in and slide-up animation for left-side content */
@@ -699,9 +699,11 @@ form .btn-primary:hover {
 }
 /* Footer Section */
 .footer-section {
-  background-color: #235079;
-  color: #ffffff;
+  background-color:#fff;
+  color: #235079;
   padding: 40px 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1) !important;
+  border-bottom: 2px solid #f5f5f5 !important;
 }
 
 .footer-logo .website_name {
@@ -717,7 +719,7 @@ form .btn-primary:hover {
 .footer-tagline {
   font-size: 16px;
   margin-top: 5px;
-  color: #ccc;
+  color: #235079;
 }
 
 /* Footer Heading */
@@ -739,11 +741,34 @@ form .btn-primary:hover {
 }
 
 .footer-links a {
-  text-decoration: none;
-  color: #ccc;
+  color: #235079;
   font-size: 16px;
+  font-weight: 500;
+  margin: 0 12px;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 4px;
+text-decoration: none !important;
+  display: inline-block;
   transition: color 0.3s ease;
 }
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #cc901b, #235079);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.footer-links a:hover::after {
+  width: 100%; /* Expanding underline effect */
+}
+
 
 .footer-links a:hover {
   color: #cc901b;
@@ -753,7 +778,7 @@ form .btn-primary:hover {
 .social-icons a {
   display: inline-block;
   font-size: 24px;
-  color: #ccc;
+  color: #235079;
   margin-right: 15px;
   transition: color 0.3s ease;
 }
@@ -772,7 +797,7 @@ form .btn-primary:hover {
 
 .footer-bottom p {
   font-size: 14px;
-  color: #ccc;
+  color: #235079;
 }
 
 /* Responsive Styling */
@@ -784,5 +809,108 @@ form .btn-primary:hover {
   .social-icons a {
     margin-right: 10px;
     font-size: 20px;
+  }
+}
+.form-control:focus{
+    border-color: #cc901b !important;
+    box-shadow: 0 0 0 0.2rem rgba(204, 144, 27, 0.25) !important;
+}
+/* Floating Buttons Container */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+/* Floating Button */
+.floating-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #235079;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.floating-btn:hover {
+  transform: translateY(-5px);
+}
+
+/* WhatsApp Button Styling */
+.whatsapp-btn {
+  background-color: #25d366;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1da851;
+}
+
+/* Mail Button Styling */
+.mail-btn {
+  background-color: #cc901b;
+}
+
+.mail-btn:hover {
+  background-color: #b87a1a;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .floating-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+  .footer-heading{
+    text-align: center;
+  }
+}
+.contact-subtext {
+  font-size: 22px;
+  font-weight: 500;
+  color: #235079;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #cc901b, #235079);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: fadeInUp 0.8s ease;
+}
+
+.contact-subtext .emoji {
+  font-size: 28px;
+  margin-right: 8px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
