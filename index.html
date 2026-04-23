@@ -3,363 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website launcher</title>
+    <title>Rohtas Tech Solution | School ERP & Web Development</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" style="background-color: #fff !important;">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <!-- Logo -->
-        <img src="images/logo.png" alt="Website Logo" style="height: 40px; margin-right: 8px;">
-        <!-- Website Name -->
-        <p class="website_name" style="color: #cc901b; margin-bottom: 0; text-decoration: underline; text-decoration-color: #cc901b;">
-          Website 
-          <span class="website_name2" style="color: #235079; text-decoration: underline; text-decoration-color: #235079;">
-            Launcher
-          </span>
-        </p>
-      </a>
-      
-      <!-- Toggle button for mobile view -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex justify-content-center gap-4">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact us</a>
-          </li>
-        </ul>
-        <!-- Request Quote Button -->
-        <div class="ms-auto">
-          <a href="#contact" class="btn btn-warning" style="background-color: #cc901b; color: #fff; border-radius: 20px; padding: 8px 20px;">
-            Request Quote
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
-  
-  <section class="banner-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Left Side Content -->
-        <div class="col-md-6">
-          <h1 class="headline">
-            <span id="typing-text">
-              <span id="intro-text" style="color: #235079;"></span>
-              <span id="name-text" style="color: #cc901b;"></span>
-            </span>
-            <span id="cursor" class="cursor">|</span>
-          </h1>
-          <p class="subtext">
-            A passionate <strong>Web Developer</strong> specializing in <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Bootstrap</strong>,<strong>Mysql</strong> and <strong>PHP</strong>.
-          </p>
-          <p class="inspire-text">
-            🚀 <strong>Boost your business</strong> with a professional, fast, and responsive website.<br>
-            💡 Let’s turn your ideas into reality with <strong>innovative designs</strong> and seamless user experience.<br>
-            🌟 Take your online presence to the next level — <strong>Stand out from the crowd!</strong>
-          </p>
-          <div class="cta-buttons">
-            <a href="#portfolio" class="btn btn-primary">View My Work</a>
-            <a href="#contact" class="btn btn-outline-dark">Hire Me</a>
-          </div>
-        </div>
-        <!-- Right Side Image -->
-        <div class="col-md-6 text-center banner-image-container">
-          <img src="images/portfolio.jpg" alt="Web Developer" class="banner-image">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- About Me Section -->
-<section class="about-section" id="about">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- About Me Image -->
-      <div class="col-md-5 order-1 order-md-1 text-center about-image-container d-none d-md-block">
-        <img src="images/portfolio.jpg" alt="Sandeep Kumar" class="about-image">
-      </div>
-      <!-- About Me Content -->
-      <div class="col-md-7 order-2 order-md-2" >
-        <h2 class="section-title">About Me</h2>
-           <!-- About Me Image -->
-      <div class="col-md-5 order-1 order-md-1 text-center about-image-container d-block d-md-none">
-        <img src="images/portfolio.jpg" alt="Sandeep Kumar" class="about-image">
-      </div>
-        <p class="about-text">
-          👋 Hi, I'm <span class="highlight-name">Sandeep Kumar</span>, a passionate <strong>Web Developer</strong> specializing in building modern, responsive, and user-friendly websites.  
-          I have experience working with <span class="highlight-tech">HTML, CSS, JavaScript, Bootstrap, Mysql</span> and <span class="highlight-tech">PHP</span>.  
-        </p>
-        <p class="about-text">
-          I love transforming ideas into reality through innovative designs and seamless functionality. My goal is to create websites that not only look good but also provide a smooth user experience.
-        </p>
-        <div class="skills">
-          <span class="skill">HTML</span>
-          <span class="skill">CSS</span>
-          <span class="skill">Bootstrap</span>
-          <span class="skill">JavaScript</span>
-          <span class="skill">PHP</span>
-          <span class="skill">mysql</span>
-          
-        </div>
-        <a href="#portfolio" class="btn btn-primary">See My Work</a>
-      </div>
-    </div>
-  </div>
-</section>
 
- <!-- Services Section -->
-<section class="services-section" id="services">
-  <div class="container">
-    <h2 class="section-title-services">Our Services</h2>
-    <div class="row">
-      <!-- Service Item 1 -->
-      <div class="col-md-4">
-        <div class="service-card">
-          <i class="fas fa-code service-icon"></i>
-          <h3 class="service-title">Web Development</h3>
-          <p class="service-description">
-            We build responsive, user-friendly, and fast websites using modern technologies.
-          </p>
-        </div>
-      </div>
-      <!-- Service Item 2 -->
-      <div class="col-md-4">
-        <div class="service-card">
-          <i class="fas fa-paint-brush service-icon"></i>
-          <h3 class="service-title">UI/UX Design</h3>
-          <p class="service-description">
-            Designing visually appealing and intuitive user experiences.
-          </p>
-        </div>
-      </div>
-      <!-- Service Item 3 -->
-      <div class="col-md-4">
-        <div class="service-card">
-          <i class=" fas fa-solid fa-wrench service-icon"></i>
-          <h3 class="service-title">Maintenance & Support</h3>
-          <p class="service-description">
-            Quickly identify and resolve issues to keep your website running smoothly with regular updates and fixes.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="portfolio-section" id="portfolio">
-  <div class="container my-work">
-    <h2 class="section-title">My Work</h2>
-    <div class="row">
-      <!-- Portfolio Item 1 -->
-      <div class="col-md-4">
-        <div class="portfolio-item">
-          <img src="images/project1.png" alt="Project 1">
-          <div class="portfolio-info">
-            <h3 class="highlight-tech">e-grocery website </h3>
-            <p class="about-text">🚀 Built with HTML, CSS, and JavaScript. Increased client sales by 30% within two months.</p>
-            <a href="http://deharigrocerytest.wuaze.com/?i=1" class="btn btn-outline-primary" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-          <div class="col-md-4">
-        <div class="portfolio-item">
-          <img src="images/project2.png" alt="Project 2">
-          <div class="portfolio-info">
-            <h3 class="highlight-tech">Harmony showroom </h3>
-            <p class="about-text">Built with purpose, engineered for performance. Here's why thousands trust us to power their journeys.</p>
-            <a href="https://ourharmony.in/" class="btn btn-outline-primary" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-    
-    </div>
-  </div>
-</section>
-<!-- Testimonials Section -->
-<section class="testimonials-section">
-  <div class="container">
-    <h2 class="section-title-review">What My Clients Say</h2>
-    <div class="row">
-     
-      <!-- Testimonial Card 2 -->
-      <div class="col-md-4">
-        <div class="testimonial-card">
-          <div class="testimonial-content">
-            <p>"Excellent work! My e-commerce site is running smoothly, and sales have increased by 30%!"</p>
-          </div>
-          <div class="testimonial-author">
-            <!--img src="images/jane.jpg" alt="Jane Smith"*-->
-            <div>
-              <h5>Rajesh kumar</h5>
-              <span>Founder, e-grocery</span>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-    </div>
-  </div>
-</section>
-<!-- Process Section -->
-<section class="process-section">
-  <div class="container">
-    <h2 class="section-title-process">My Work Process</h2>
-    <div class="row">
-      <!-- Step 1 -->
-      <div class="col-md-4">
-        <div class="process-step">
-          <div class="icon-container">
-            <i class="fas fa-comments"></i>
-          </div>
-          <h3>Consultation</h3>
-          <p>We’ll discuss your project goals and vision to understand your requirements clearly.</p>
-        </div>
-      </div>
-      <!-- Step 2 -->
-      <div class="col-md-4">
-        <div class="process-step">
-          <div class="icon-container">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
             <i class="fas fa-code"></i>
-          </div>
-          <h3>Development</h3>
-          <p>Building the website using best coding practices and modern frameworks.</p>
+            <span>Rohtas Tech <span class="highlight">Solution</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-quote ms-lg-3">Get Quote</a>
         </div>
-      </div>
-      <!-- Step 3 -->
-      <div class="col-md-4">
-        <div class="process-step">
-          <div class="icon-container">
-            <i class="fas fa-rocket"></i>
-          </div>
-          <h3>Launch</h3>
-          <p>Delivering the final product and providing support to ensure smooth performance.</p>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
-<!-- Contact Section -->
-<section class="contact-section" id="contact">
-  <div class="container">
-    <h2 class="section-title-process">Get In Touch</h2>
-    <p class="contact-subtext">
-      <span class="emoji">💬</span>
-      <span class="text">Got a project in mind? <strong>Let’s make it happen!</strong></span>
-    </p>
-        
-    <div class="row">
-      <!-- Contact Form -->
-      <div class="col-md-6 " >
-        <form id="contact-form">
-          <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Your Name" required>
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Your Email" required>
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
+</nav>
 
-   
-    </div>
-  </div>
-</section>
-<!-- Floating Action Buttons -->
-<div class="floating-buttons">
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/9315066458" target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <!-- Mail Button -->
-  <a href="mailto:infowebsitelauncher@gmail.com" class="floating-btn mail-btn" title="Send an Email">
-    <i class="fas fa-envelope"></i>
-  </a>
-</div>
-<!-- Footer Section -->
-<footer class="footer-section">
-  <div class="container">
-    <div class="row">
-      <!-- Logo and Tagline -->
-      <div class="col-md-4">
-        <nav class="" style="border-bottom:none !important;padding: 0; background-color: #fff !important; box-shadow: none !important; border-color: none !important;">
-          <div class="container-fluid" style="padding: 0; justify-content: center !important;">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-              <!-- Logo -->
-              <img src="images/logo.png" alt="Website Logo" width="40" height="40" class="d-inline-block align-text-top" style="margin-right: 8px; object-fit: contain;">
-              
-              <!-- Text -->
-              <div>
-                <p class="website_name" style=" font-weight:500 !important;color: #cc901b; margin-bottom: 0; text-decoration: underline; text-decoration-color: #cc901b;">
-                  <strong>Website</strong>
-                  <span class="website_name2" style="color: #235079; text-decoration: underline; text-decoration-color: #235079;">
-                    <strong>Launcher</strong>
-                  </span>
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="hero-title">
+                    Build Your Digital Future with 
+                    <span class="gradient-text">Rohtas Tech Solution</span>
+                </h1>
+                <p class="hero-text">
+                    We create powerful websites, school ERP systems, and digital solutions to grow your business faster.
                 </p>
-                
-              </div>
-            </a>
-          </div>
-        </nav>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="col-md-4">
-        <h5 class="footer-heading">Quick Links</h5>
-        <ul class="footer-links">
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Social Media Icons -->
-      <div class="col-md-4">
-        <h5 class="footer-heading">Follow Me</h5>
-        <div class="social-icons">
-          <a href="https://www.instagram.com/website_launcher" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://github.com/sandeep9354/websiteluncher" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100079333711721" target="_blank"><i class="fab fa-facebook"></i></a>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get Free Demo</a>
+                    <a href="#portfolio" class="btn btn-outline">View Projects</a>
+                </div>
+                <div class="hero-stats">
+                    <div><span>50+</span> Projects</div>
+                    <div><span>30+</span> Clients</div>
+                    <div><span>24/7</span> Support</div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <img src="https://placehold.co/600x500/2563eb/white?text=Rohtas+Tech" alt="Hero Image">
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+</section>
 
-    <!-- Copyright Notice -->
-    <div class="footer-bottom text-center">
-      <p>&copy; 2025 Sandeep Kumar. All rights reserved.</p>
+<!-- Founder Section -->
+<section class="founders" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2>Meet The <span class="gradient-text">Founders</span></h2>
+            <p>The visionaries behind Rohtas Tech Solution</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="founder-card">
+                    <div class="founder-img">
+                        <img src="https://placehold.co/300x300/2563eb/white?text=Sandeep" alt="Sandeep Kumar">
+                    </div>
+                    <h3>Sandeep Kumar</h3>
+                    <p class="designation">Founder & CEO</p>
+                    <p class="bio">Full Stack Developer with 5+ years of experience. Expert in building scalable web applications and ERP systems.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="founder-card">
+                    <div class="founder-img">
+                        <img src="https://placehold.co/300x300/d97706/white?text=Bhawana" alt="Bhawana Priya">
+                    </div>
+                    <h3>Bhawana Priya</h3>
+                    <p class="designation">Co-Founder & COO</p>
+                    <p class="bio">Operations expert ensuring smooth project delivery. Specialized in client relations and business growth.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our <span class="gradient-text">Services</span></h2>
+            <p>Comprehensive digital solutions for your business</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3>School ERP System</h3>
+                    <p>Complete school management with fee tracking, attendance, exams, and reports.</p>
+                    <span class="badge">Specialized</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Responsive, fast, and SEO-friendly websites for your business.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Grow your online presence with SEO, social media, and ads.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Maintenance & Support</h3>
+                    <p>24/7 technical support and regular updates for your website.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-us">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose <span class="gradient-text">Rohtas Tech Solution?</span></h2>
+            <p>What makes us different from others</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="why-card">
+                    <i class="fas fa-tag"></i>
+                    <h3>Affordable Pricing</h3>
+                    <p>Best quality at competitive prices</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="why-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your project delivered on time</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="why-card">
+                    <i class="fas fa-chalkboard-user"></i>
+                    <h3>School ERP Expertise</h3>
+                    <p>Specialized in school management systems</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="why-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Round the clock technical assistance</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="why-card">
+                    <i class="fas fa-shield"></i>
+                    <h3>Secure Systems</h3>
+                    <p>Bank-level security for your data</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="why-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Modern Tech</h3>
+                    <p>Latest technologies and frameworks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our <span class="gradient-text">Portfolio</span></h2>
+            <p>Real problems, smart solutions, amazing results</p>
+        </div>
+        <div class="portfolio-card">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img src="https://placehold.co/500x400/2563eb/white?text=ERP+Dashboard" alt="School ERP" class="portfolio-img">
+                </div>
+                <div class="col-lg-7">
+                    <h3>🏫 School ERP System</h3>
+                    <div class="problem-solution">
+                        <div class="problem">
+                            <strong>⚠️ Problem:</strong> Manual fee tracking, attendance, and exam management causing delays and errors
+                        </div>
+                        <div class="solution">
+                            <strong>✅ Solution:</strong> Built complete digital ERP system with automated fee collection, online attendance, and exam modules
+                        </div>
+                        <div class="result">
+                            <strong>🎯 Result:</strong> 70% reduction in manual work, 100% fee tracking accuracy
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-3">Live Demo →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>Get In <span class="gradient-text">Touch</span></h2>
+            <p>Get your school or business online in just 7 days</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Phone Number">
+                    <textarea rows="4" placeholder="Tell us about your project..."></textarea>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp Us</h4>
+                            <p>+91 9315066458</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@rohtastech.com</p>
+                        </div>
+                    </div>
+                    <div class="guarantee-badge">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>7-Day Delivery Guarantee</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-code"></i>
+                <h3>Rohtas Tech <span>Solution</span></h3>
+                <p>Empowering Schools & Businesses Digitally</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rohtas Tech Solution. All rights reserved.</p>
+        </div>
+    </div>
 </footer>
 
-  <!-- Bootstrap JS and Popper.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919315066458" class="floating-wp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
-<script src="javascript/script.js"></script>
 </html>
-
